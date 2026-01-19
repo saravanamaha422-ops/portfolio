@@ -10,133 +10,174 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo"><span></span></div>
-        <ul class="nav-links">
-            <li><a href="#about">Profile</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Work</a></li>
-        </ul>
-        <a href="mailto:saravanamaha422@gmail.com" class="btn-cta">Connect</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+            </ul>
+            <a href="mailto:saravanamaha422@gmail.com" class="btn-connect">Connect</a>
+        </div>
     </nav>
 
-    <header id="about">
-        <div class="hero-container">
-            <p class="badge">Final Year Computer Science Engineering</p>
-            <h1>MAHALAKSHMI <span>S</span></h1>
-            
-            <div class="objective-card">
-                <span class="label">Career Objective</span>
-                <p>To apply technical aptitude, adaptability, and a passion for software development to contribute effectively to real-world projects in a Full Stack capacity.</p>
-            </div>
+    <header id="about" class="section-bg hero-bg">
+        <div class="dark-overlay">
+            <div class="hero-container centered">
+                <p class="badge">Final Year Computer Science Engineering</p>
+                <h1 class="hero-name">MAHALAKSHMI <span>S</span></h1>
+                
+                <div class="objective-card glass glow-hover">
+                    <h2 class="bold-heading">Career Objective</h2>
+                    <p>To apply technical aptitude, adaptability, and a passion for software development to contribute effectively to real-world projects in a Full Stack capacity.</p>
+                </div>
 
-            <div class="summary-section">
-                <h3>Professional Summary</h3>
-                <p>Enthusiastic Computer Science Engineering student specialized in Full Stack Development and Machine Learning. Proficient in building responsive web applications and predictive models, with a proven track record of leadership and technical problem-solving in team-oriented environments.</p>
-            </div>
-
-            <div class="action-buttons">
-                <a href="maha resume.pdf" download class="btn-download">
-    <i data-lucide="download"></i> Download Resume
-</a>
+                <div class="hero-actions">
+                    <a href="maha resume.pdf" download class="btn-download glow-hover">
+                        <i data-lucide="download"></i> Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="education">
-        <h2 class="section-title">Academic Profile</h2>
-        <div class="glass-card">
-            <div class="card-header">
-                <h3>Bachelor of Engineering</h3>
-                <span class="date-tag">2022 — 2026</span>
-            </div>
-            <p class="institute">Government College Of Engineering, Dharmapuri</p>
-            <p class="dept">Computer Science and Engineering</p>
-            <p class="details">Focusing on core competencies in programming, web development, and software engineering. Maintaining a strong academic record while developing practical industry skills.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="dark-accent">
-        <h2 class="section-title light">Core Competencies</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i data-lucide="code-2"></i>
-                <h4>Development</h4>
-                <p>Python, C, HTML, CSS, React, JavaScript, Firebase</p>
-            </div>
-            <div class="skill-item">
-                <i data-lucide="figma"></i>
-                <h4>UI/UX Design</h4>
-                <p>Design Thinking, Figma, Wireframing, Maze Usability Testing</p>
-            </div>
-            <div class="skill-item">
-                <i data-lucide="brain-circuit"></i>
-                <h4>Data Science</h4>
-                <p>XGBoost, Scikit-learn, SHAP, NumPy, Pandas, SMOTE</p>
+    <section id="summary" class="section-bg summary-bg">
+        <div class="dark-overlay">
+            <h2 class="section-title light">Professional Summary</h2>
+            <div class="summary-card glass-deep glow-hover">
+                <ul class="point-wise-list">
+                    <li>Enthusiastic Computer Science Engineering student specialized in Full Stack Development and Machine Learning.</li>
+                    <li>Currently building foundational skills in Python, web technologies, and software development principles.</li>
+                    <li>Known for strong problem-solving abilities, quick learning, and effective leadership in team environments.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="experience">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="experience-card glass-card">
-            <div class="card-header">
-                <h3>Python Fullstack Intern</h3>
-                <span class="date-tag">2025</span>
-            </div>
-            <p class="company">Optimus Technocrates</p>
-            <p class="details">Gained hands-on experience in full-stack architecture, focusing on back-end logic implementation and responsive front-end design using professional software development lifecycles.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="dark-accent">
-        <h2 class="section-title light">Project Portfolio</h2>
-        <div class="project-grid">
-            <div class="proj-card">
-                <span class="type">UI/UX Design</span>
-                <h4>Pinterest Redesign</h4>
-                <p>Designed a user-centric Pinterest-like application following the Design Thinking process. Utilized Figma for interactive prototyping and Maze for usability testing to optimize content discovery.</p>
-            </div>
-            <div class="proj-card">
-                <span class="type">Machine Learning</span>
-                <h4>Road Accident Analysis</h4>
-                <p>Predicting accident severity using XGBoost and SMOTE. Employed SHAP for model explainability to support traffic safety decision-making.</p>
-            </div>
-            <div class="proj-card">
-                <span class="type">Full Stack</span>
-                <h4>MERN E-Commerce</h4>
-                <p>Developed a comprehensive online platform featuring product management, search functionality, and secure payment processing.</p>
-            </div>
-            <div class="proj-card">
-                <span class="type">Database</span>
-                <h4>Chocolate Factory System</h4>
-                <p>Oracle-based production management system developed under the Naan Mudhalvan initiative for inventory tracking.</p>
+    <section id="education" class="section-bg edu-bg">
+        <div class="light-overlay">
+            <h2 class="bold-heading section-title">Academic Profile</h2>
+            <div class="glass-card centered-card glow-hover academic-box">
+                <div class="card-header">
+                    <h3>Bachelor of Engineering</h3>
+                    <span class="date-tag">2022 — 2026</span>
+                </div>
+                <ul class="point-wise-list dark-text">
+                    <li><strong>Institution:</strong> Government College Of Engineering, Dharmapuri (Affiliated to Anna University).</li>
+                    <li><strong>Major:</strong> Computer Science and Engineering.</li>
+                    <li><strong>Current Status:</strong> Pursuing final year focusing on core programming and software engineering.</li>
+                    <li>Maintaining strong academic performance while building practical technical industry skills.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="certs">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-box">✦ Deep Learning Fundamentals (Nvidia - 2025)</div>
-            <div class="cert-box">✦ Cloud Engineering Professional (Google - 2025)</div>
-            <div class="cert-box">✦ Data Analytics Professional (Google - 2024)</div>
-            <div class="cert-box">✦ Oracle Cloud Infrastructure (2023)</div>
+    <section id="skills" class="section-bg skills-bg">
+        <div class="dark-overlay">
+            <h2 class="bold-heading section-title light">Core Competencies</h2>
+            <div class="skills-grid horizontal-grid">
+                <div class="skill-item glass glow-hover">
+                    <i data-lucide="code-2"></i>
+                    <h3>Development</h3>
+                    <ul class="point-wise-list">
+                        <li>Python & C Language</li>
+                        <li>HTML & CSS</li>
+                        <li>React & JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-item glass glow-hover">
+                    <i data-lucide="award"></i>
+                    <h3>Soft Skills</h3>
+                    <ul class="point-wise-list">
+                        <li>Problem Solving</li>
+                        <li>Teamwork & Communication</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-bg proj-bg">
+        <div class="dark-overlay">
+            <h2 class="bold-heading section-title light">Project Portfolio</h2>
+            <div class="project-grid horizontal-grid">
+                <div class="proj-card glass glow-hover">
+                    <span class="type">Machine Learning</span>
+                    <h3>Road Accident Analysis</h3>
+                    <ul class="point-wise-list">
+                        <li>Used Python, Scikit-learn, XGBoost, and SMOTE.</li>
+                        <li>Analyzed datasets to identify accident severity patterns.</li>
+                        <li>Applied SHAP for model explainability and insights.</li>
+                    </ul>
+                </div>
+                <div class="proj-card glass glow-hover">
+                    <span class="type">UI/UX Design</span>
+                    <h3>Pinterest Redesign</h3>
+                    <ul class="point-wise-list">
+                        <li>Figma wireframing and interactive prototyping.</li>
+                        <li>Followed design thinking from research to testing.</li>
+                        <li>Tested flows via Maze for user optimization.</li>
+                    </ul>
+                </div>
+                <div class="proj-card glass glow-hover">
+                    <span class="type">Java / OOSE</span>
+                    <h3>Exam Registration System</h3>
+                    <ul class="point-wise-list">
+                        <li>Designed via OOSE principles and UML diagrams.</li>
+                        <li>Implemented secure registration and admin workflows.</li>
+                        <li>Database integration using MySQL.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="section-bg cert-bg">
+        <div class="light-overlay">
+            <h2 class="bold-heading section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item glow-hover">
+                    <span>✦ Python Fullstack Intern - Optimus Technocrates (2025)</span>
+                    <a href="certs/intern.pdf" target="_blank" class="btn-view">View</a>
+                </div>
+                <div class="cert-item glow-hover">
+                    <span>✦ Fundamentals of Deep Learning - Nvidia (2025)</span>
+                    <a href="certs/nvidia.pdf" target="_blank" class="btn-view">View</a>
+                </div>
+                <div class="cert-item glow-hover">
+                    <span>✦ Cloud Engineering - Google (2025)</span>
+                    <a href="certs/cloud engineering.pdf" target="_blank" class="btn-view">View</a>
+                </div>
+                <div class="cert-item glow-hover">
+                    <span>✦ Data Analytics - Google (2024)</span>
+                    <a href="certs/data analytics.pdf" target="_blank" class="btn-view">View</a>
+                </div>
+                <div class="cert-item glow-hover">
+                    <span>✦ Oracle Cloud Infrastructure (2023)</span>
+                    <a href="certs/oracle.pdf" target="_blank" class="btn-view">View</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-wrap">
-            <h2 class="footer-logo"><span></span></h2>
+            <h2 class="footer-logo">Mahalakshmi<span>.S</span></h2>
             <div class="contact-block">
-                <p>Dharmapuri, Tamil Nadu, India</p>
+                <p>Dharmapuri, Tamil Nadu, India | +91 76396 78064</p>
                 <p>saravanamaha422@gmail.com</p>
-                <p>+91 76396 78064</p>
             </div>
             <div class="social-links">
-                <a href="https://github.com/saravanamaha422-ops" class="social-btn"><i data-lucide="github"></i> GitHub</a>
-                <a href="#" class="social-btn"><i data-lucide="linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/saravanamaha422-ops" target="_blank" class="social-btn glow-hover">
+                    <i data-lucide="github"></i> GitHub
+                </a>
+                <a href="#" class="social-btn glow-hover">
+                    <i data-lucide="linkedin"></i> LinkedIn
+                </a>
             </div>
             <p class="copyright">© 2026 Mahalakshmi S. All Rights Reserved.</p>
         </div>
@@ -144,6 +185,4 @@
 
     <script>lucide.createIcons();</script>
 </body>
-
 </html>
-
